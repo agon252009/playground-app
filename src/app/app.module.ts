@@ -3,16 +3,15 @@ import {NgModule} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {AppComponent} from './app.component';
-import {ContactComponent} from './contact/contact.component';
 import {ContactAddComponent} from './contact/contact_add/contact-add/contact-add.component';
 import {FormsModule} from '@angular/forms';
-import {ContactListComponent} from './contact-list/contact-list.component';
+import {ContactListComponent} from './contact/contact-list/contact-list.component';
+import {ContactService} from './contact.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
     ContactAddComponent,
     ContactListComponent
   ],
@@ -21,7 +20,7 @@ import {ContactListComponent} from './contact-list/contact-list.component';
     FormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
