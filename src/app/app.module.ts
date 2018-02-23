@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {ContactAddComponent} from './contact/contact_add/contact-add/contact-add.component';
 import {FormsModule} from '@angular/forms';
 import {ContactListComponent} from './contact/contact-list/contact-list.component';
-import {ContactService} from './contact.service';
+import {ContactService} from './services/contact/contact.service';
 
 
 @NgModule({
