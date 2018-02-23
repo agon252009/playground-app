@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './phonebook/contact/contact.component';
+import { ContactComponent } from './contact/contact/contact.component';
 
 
 @NgModule({
