@@ -5,9 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
 
-  constructor() { }
+export class ContactComponent implements OnInit {
+  private _firstName: string;
+  private _lastName: string;
+
+  get firstName(): string {
+    return this._firstName;
+  }
+
+  get lastName(): string {
+    return this._lastName;
+  }
+
+  constructor(firstName: string, lastName: string) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+  }
 
   ngOnInit() {
   }
