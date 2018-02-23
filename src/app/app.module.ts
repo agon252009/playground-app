@@ -1,10 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
-
-import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { ContactAddComponent } from './contact/contact_add/contact-add/contact-add.component';
+import {AppComponent} from './app.component';
+import {ContactComponent} from './contact/contact.component';
+import {ContactAddComponent} from './contact/contact_add/contact-add/contact-add.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { ContactAddComponent } from './contact/contact_add/contact-add/contact-a
     ContactAddComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
